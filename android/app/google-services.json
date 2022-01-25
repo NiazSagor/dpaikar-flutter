@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "636856560051",
+    "project_id": "dpaikar-13a00",
+    "storage_bucket": "dpaikar-13a00.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:636856560051:android:59b9461148b276be5cc3c6",
+        "android_client_info": {
+          "package_name": "com.dpaikar.user"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "636856560051-t1i660tamgk9qsma2saomkb9eqskcfcp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHt8NkAJZHJKZKqybqINTd7OMeauwYVxs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "636856560051-t1i660tamgk9qsma2saomkb9eqskcfcp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

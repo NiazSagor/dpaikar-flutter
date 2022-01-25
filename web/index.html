@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+      If you are serving your web app in a path other than the root, change the
+      href value below to reflect the base path you are serving from.
+
+      The path provided below has to start and end with a slash "/" in order for
+      it to work correctly.
+
+      Fore more details:
+      * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+    -->
+    <base href="/">
+
+    <meta charset="UTF-8">
+    <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+    <meta content="GroFresh." name="description">
+
+    <!-- iOS meta tags & icons -->
+    <meta content="yes" name="apple-mobile-web-app-capable">
+    <meta content="black" name="apple-mobile-web-app-status-bar-style">
+    <meta content="flutter_grocery" name="apple-mobile-web-app-title">
+    <link href="icons/app_logo.png" rel="apple-touch-icon">
+
+    <!-- Favicon -->
+
+    <link href="favicon.png" rel="icon" type="image/png"/>
+
+
+    <title>GroFresh</title>
+    <link href="manifest.json" rel="manifest">
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+<!-- This script installs service_worker.js to provide PWA functionality to
+     application. For more information, see:
+     https://developers.google.com/web/fundamentals/primers/service-workers -->
+<!--  <script src="/__/firebase/8.4.2/firebase-app.js"></script>-->
+<!--  <script src="/__/firebase/init.js"></script>-->
+
+
+<!-- // Other stuff -->
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCaCSJ0BZItSyXqBv8vpD1N4WBffJeKhLQ"></script>
+
+<script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('flutter-first-frame', function () {
+        navigator.serviceWorker.register('flutter_service_worker.js');
+        navigator.serviceWorker.register("/firebase-messaging-sw.js");
+      });
+    }
+
+</script>
+
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-messaging.js"></script>
+
+<div class="center ">
+    <div class="logo"><img alt="logo" src="logo.png" width="250px"/></div>
+    <div class="loader"><img alt="loader" src="loading.gif" width="250px"/></div>
+</div>
+
+
+<script>
+    var firebaseConfig = {
+      apiKey: "AIzaSyDuBlqmsh9xw17osLOuEn7iqHtDlpkulcM",
+      authDomain: "grofresh-3986f.firebaseapp.com",
+      projectId: "grofresh-3986f",
+      storageBucket: "grofresh-3986f.appspot.com",
+      messagingSenderId: "250728969979",
+      appId: "1:250728969979:web:b79642a7b2d2400b75a25e",
+      measurementId: "G-X1HCG4K8HJ"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+
+</script>
+<script src="main.dart.js" type="application/javascript"></script>
+</body>
+</html>
